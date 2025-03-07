@@ -1,24 +1,24 @@
-1. Download the `pop` binary: This command uses `curl` to download the `pop` binary from the specified URL.
+## 1. Download the `pop` binary: This command uses `curl` to download the `pop` binary from the specified URL.
 ```
 curl -L -o pop "https://dl.pipecdn.app/v0.2.8/pop"
 ```
 
-2. Make the `pop` binary executable: This command changes the file permissions to make the `pop` binary executable.
+## 2. Make the `pop` binary executable: This command changes the file permissions to make the `pop` binary executable.
 ```
 chmod +x pop
 ```
 
-3. Create a directory for cache: This creates a new directory where the cache will be stored.
+## 3. Create a directory for cache: This creates a new directory where the cache will be stored.
 ```
 mkdir download_cache
 ```
-4. Sign up with a referral code: This command runs the `pop` program with the `--signup-by-referral-route` option 
+## 4. Sign up with a referral code: This command runs the `pop` program with the `--signup-by-referral-route` option 
 and provides your referral code (`63b754eb97201984`). Make sure to replace this with your actual referral code if needed.
 ```
 ./pop --signup-by-referral-route 63b754eb97201984
 ```
 
-5. Start the node with specified configurations: This starts the node with your custom configurations (RAM, disk, cache directory, and public key).
+## 5. Start the node with specified configurations: This starts the node with your custom configurations (RAM, disk, cache directory, and public key).
 You'll need to replace `<KEY>` with your actual public key and adjust the values for RAM and disk storage as necessary.
 ```
 sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY> --enable-80-443
