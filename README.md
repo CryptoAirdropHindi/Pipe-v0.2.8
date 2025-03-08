@@ -29,6 +29,26 @@ sudo ./pop --ram 8 --max-disk 500 --cache-dir /data --pubKey <KEY> --enable-80-4
 * `--pubKey <KEY>`: Use your actual public key here (replace `<KEY>`).
 * `--enable-80-443`: Enables ports 80 and 443.
 
+Save the file
+```
+nano ~/node_info.json
+```
+Ctrl+x to Exit
+
+Node Status
+```
+./pop --status
+```
+Check points
+```
+./pop --points
+```
+Generate referral
+```
+./pop --gen-referral-route
+```
+To Start Next Day, Run THE Start The Node COMMAND
+
  ---------------------------------------------------------------------------------------------------------------------------
 
 "Great, all set! If you have any questions, don’t hesitate to ask in our Telegram channel."
